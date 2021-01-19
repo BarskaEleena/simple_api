@@ -10,7 +10,7 @@ from django.http import JsonResponse
 def index(request):
     rand = ['a', 'b', 'c', 'd', 'e']
     #random.choice(foo))
-    rand = random.choice(rand))
+    rand = random.choice(rand)
     data = [{"answer": rand}]
     return JsonResponse(data, safe=False)
     #return render(request, "index.html")
